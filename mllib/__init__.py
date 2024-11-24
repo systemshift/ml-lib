@@ -7,6 +7,7 @@ to help understand their inner workings.
 Available models:
 ---------------
 KNearestNeighbors : K-Nearest Neighbors algorithm for classification and regression
+LinearRegression : Linear Regression using gradient descent optimization
 
 Base classes:
 ------------
@@ -15,8 +16,10 @@ BaseModel : Abstract base class that all models inherit from
 
 from .base import BaseModel
 from .knn import KNearestNeighbors
+from .linear_regression import LinearRegression
 
 __all__ = [
     'BaseModel',
     'KNearestNeighbors',
+    'LinearRegression',
 ]
